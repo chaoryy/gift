@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/heart-bg.jpg);
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+p {
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+#next-btn {
+  color: black;
+  background-color: #f5d8b9;
+  border: solid 4px #d76159;
+  font-size: 20px;
+  border-radius: 10px;
+
+  /* Убираем display: flex, если внутри только текст, он и так отцентрируется */
+  display: block;
+
+  padding: 5px 20px;
+  /* margin-left и margin-right в значении auto центрируют блочный элемент */
+  margin: 40px auto 0;
+
+  cursor: pointer;
+  font-family: inherit;
+}
+.hidden {
+  display: none;
+}
+
+#main-container {
+  background: white;
+  height: 600px;
+  width: 600px; /* Уменьшим до адекватного размера окна */
+
+  /* Центрируем контент ВНУТРИ окна */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центр по вертикали */
+  align-items: center; /* Центр по горизонтали */
+}
+
+#envelope-img {
+    width: 300px;
+    margin: 10px auto 80px;
+}
+
+/* ИСПРАВЛЕННЫЕ СТИЛИ */
+#envelope-img,
+#asking-pic,
+#heart-cat,
+#dancing-cat {
+  max-width: 80%; /* Подбери размер, чтобы влезало в окошко */
+  height: auto;
+  display: block;
+  margin: 10px auto; /* Небольшой отступ до текста */
+}
+
+p {
+  font-weight: 500;
+  color: #333; /* Поменял на темный, на розовом фоне белый плохо читается */
+  text-align: center;
+  margin: 10px 0;
+}
+
+.love {
+  color: #a4433f;
+}
+
+.img-btn {
+  width: 100px; /* Настрой под свои картинки */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.img-btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#asking-pic {
+  width: 250px; /* Жесткая ширина */
+  height: 250px; /* Жесткая высота */
+  object-fit: contain; /* Картинка впишется в эти размеры без искажений */
+  margin: 10px auto;
+  display: block;
+}

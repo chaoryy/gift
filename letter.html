@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><3</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="envelope-screen">
+        <img src="assets/envelope.png" alt="Envelope" id="envelope-img" />
+        <p>I have a letter for you....</p>
+        <div class="btn-wrap">
+          <button id="next-btn">>>></button>
+        </div>
+      </div>
+
+      <div id="asking-page" class="hidden">
+        <img src="/assets/shaking_cat.gif" alt="cat" id="asking-pic" />
+        <p id="question1">Do you want to open???</p>
+        <div class="btn-wrapper">
+          <img src="assets/yes.png" alt="Yes" class="img-btn" id="open-yes" />
+          <img src="assets/no.png" alt="No" class="img-btn" id="open-no" />
+        </div>
+      </div>
+
+      <div id="valentine-page" class="hidden">
+        <img src="/assets/cat_heart.gif" alt="" id="heart-cat" />
+        <p id="question2">Will you be my valentine?? <3</p>
+        <div class="btn-wrapper">
+          <img src="assets/yes.png" alt="Yes" class="img-btn" id="final-yes" />
+          <img src="assets/no.png" alt="No" class="img-btn" id="final-no" />
+        </div>
+      </div>
+
+      <div id="celeb" class="hidden">
+        <p>Yippeeeee!!!</p>
+        <img src="assets/cat_dance.gif" alt="Happy Cat" id="dancing-cat" />
+        <p>
+          <span class="love"> LOVE YOUUU!</span> <br />
+          Be prepared mwah
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
